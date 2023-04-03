@@ -1,0 +1,26 @@
+version: '3.9'
+
+services:
+    servidor:
+        container_name: servidor
+        build:
+            context: ./server
+            dockerfile: Dockerfile
+        ports:
+            - 5000:5000
+        networks:
+            - sockets_network
+    cliente:
+        container_name: cliente
+        build:
+            context: ./client
+            dockerfile: Dockerfile
+        depends_on:
+            - servidor
+        networks:
+            - sockets_network
+            
+networks:
+    sockets_network:
+        name: sockets_network
+        driver: bridge
