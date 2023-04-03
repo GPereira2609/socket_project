@@ -1,5 +1,23 @@
 # Cliente-servidor com sockets e threads
 
+# Para baixar o servidor 
+```
+	docker pull gpereira2609/socket-server:socket_project
+```
+# Para rodar o servidor 
+```
+	docker run -p 5000:5000 gpereira2609/socket-server:socket_project
+	
+```
+# Para baixar o cliente
+```
+	docker pull gpereira2609/socket-client:socket_project
+```
+# Para rodar o cliente
+``` 
+	docker run -p 5000:5000 gpereira2609/socket-client:socket_project
+```
+
 # Interfaces 
 
 # Request:
