@@ -22,7 +22,7 @@
     docker compose up
 ```
 ```
-    docker exec -t cliente python client.py
+    docker exec -it cliente python client.py
 ```
 # Interfaces 
 
