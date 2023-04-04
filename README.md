@@ -17,7 +17,13 @@
 ``` 
 	docker run -p 5000:5000 gpereira2609/socket-client:socket_project
 ```
-
+# Para rodar utilizando docker compose
+```
+    docker compose up
+```
+```
+    docker exec -t cliente python client.py
+```
 # Interfaces 
 
 # Request:
